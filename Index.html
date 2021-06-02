@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            Class=80            
+        </title>
+    </head>
+    <body>
+        <center>
+           <div style="width: 49%;"><span>1.</span>
+            <input type="text" id="p1_ib_box_1" placeholder="Input Box 1">
+            <br> <br>
+            <span>2.</span>
+            <input type="text" id="p1_ib_box_2" placeholder="Input Box 2">
+            <br> <br>
+            <span>3.</span>
+            <input type="text" id="p1_ib_box_3" placeholder="Input Box 3">
+            <br> <br>
+            <span>4.</span>
+            <input type="text" id="p1_ib_box_4" placeholder="Input Box 4">
+            <br> <br>
+            <span>5.</span>
+            <input type="text" id="p1_ib_box_5" placeholder="Input Box 5">
+            <br> <br>
+            <span>6.</span>
+            <input type="text" id="p1_ib_box_6" placeholder="Input Box 6">
+            <br> <br>
+            <div id="showPragrapgh1"></div>
+            <button onclick="getParagrapgh1()" class="btn btn-danger btn-info">Get paragraph 1</button>
+        </div style="width=49%"> 
+            <div><span>1.</span>
+            <input type="text" id="p1_ib_box_a" placeholder="Input Box A">
+            <br> <br>
+            <span>2.</span>
+            <input type="text" id="p1_ib_box_b" placeholder="Input Box B">
+            <br> <br>
+            <span>3.</span>
+            <input type="text" id="p1_ib_box_c" placeholder="Input Box C">
+            <br> <br>
+            <span>4.</span>
+            <input type="text" id="p1_ib_box_d" placeholder="Input Box D">
+            <br> <br>
+            <span>5.</span>
+            <input type="text" id="p1_ib_box_e" placeholder="Input Box E">
+            <br> <br>
+            <span>6.</span>
+            <input type="text" id="p1_ib_box_f" placeholder="Input Box F">
+            <br> <br>
+            <div id="showPragrapgh2"></div>
+            <button onclick="getParagrapgh2()" class="btn btn-warning btn-info">Get paragraph 2</button>
+        </div>
+        </center>
+        <script>
+            function getParagrapgh1() {
+                var inputs = [] ;
+                for(var i=1;i <=6 ; i++){
+                    inputs.push(document.getElementById("p1_ib_box_1" + i).value)
+                    inputs.join(".");
+                    document.getElementById("showParagrapgh1").innerHTML=inputs.join(".")
+                }
+            }
+            function getParagrapgh2() {
+                var inputs = [] ;
+                for(var i=1;i <=6 ; i++){
+                    inputs.push(document.getElementById("p1_ib_box_a" + i).value)
+                    inputs.join(".");
+                    document.getElementById("showParagrapgh2").innerHTML=inputs.join(".")
+                }
+            }
+        </script>
+    </body>
+</html>
